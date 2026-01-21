@@ -1,0 +1,133 @@
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 15vh;
+    padding: 0 75px;
+    position: relative;
+    background-color: var(--corfundo);
+    z-index: 10;
+}
+
+.logo {
+    height: 15vh;
+    cursor: pointer;
+}
+
+.nav-bar li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 150px;
+}
+
+.nav-bar li a {
+    position: relative;
+    font-size: 18px;
+    letter-spacing: 2px;
+    color: var(--corbase);
+    font-weight: 500;
+    transition: all 0.6s ease;
+}
+
+.nav-bar li a:hover {
+    transform: translate(0, -8px);
+}
+
+.nav-bar li a::after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: var(--corbase);
+    left: 50%;
+    transform: translateX(-50%);
+    top: 110%;
+    transition: all 0.6s ease;
+}
+
+.nav-bar li a:hover::after {
+    width: 70%;
+}
+
+.menu-icon {
+    display: none !important;
+    font-size: 75px;
+    color: var(--corbase);
+    cursor: pointer;
+    padding: 0 35px;
+}
+
+.mobile-menu {
+    display: none;
+    position: absolute;
+    height: 85vh;
+    width: 100%;
+    background-color: var(--corbase);
+    top: 15vh;
+    left: 0%;
+    animation: autoShow 1s ease;
+    z-index: 1;
+    overflow: hidden;
+    z-index: 5;
+}
+
+.mobile-menu li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    height: 100%;
+}
+
+.mobile-menu li a {
+    color: white;
+    font-size: 22px;
+    letter-spacing: 2px;
+}
+
+.open {
+    display: block;
+}
+
+@keyframes autoShow {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+        filter: blur(5px);
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+        filter: blur(0px);
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    header {
+        justify-content: space-between;
+        padding: 0 30px;
+    }
+
+    .nav-bar {
+        display: none;
+    }
+
+    .menu-icon {
+        display: block !important;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .mobile-menu li {
+        gap: 50px;
+    }
+
+    .menu-icon {
+        font-size: 50px;
+    }
+}

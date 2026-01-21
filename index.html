@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/modal.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <title>Amanda Ribeiro Arquiteta</title>
+</head>
+<body>
+    <header>
+        <img src="images/Logo/Logo.png" alt="" class="logo">
+
+        <div class="nav-bar">
+            <li>
+                <a href="#home">Home</a>
+                <a href="#sobre-mim">Sobre mim</a>
+                <a href="#projetos">Projetos</a>
+                <a href="#servicos">Serviços</a>
+                <a href="#orcamento">Orçamento</a>
+                <a href="#contato">Contato</a>
+            </li>
+        </div>
+
+        <i onclick="toggleMenu()" class="fas fa-bars menu-icon"></i>
+
+        <div class="mobile-menu">
+            <li>
+                <a onclick="toggleMenu()" href="#home">Home</a>
+                <a onclick="toggleMenu()" href="#sobre-mim">Sobre mim</a>
+                <a onclick="toggleMenu()" href="#projetos">Projetos</a>
+                <a onclick="toggleMenu()" href="#servicos">Serviços</a>
+                <a onclick="toggleMenu()" href="#orcamento">Orçamento</a>
+                <a onclick="toggleMenu()" href="#contato">Contato</a>
+            </li>
+        </div>
+    </header>
+
+    <main>
+        <section class="home" id="home">
+            <div class="img-container hidden-r">
+                <img src="images/Fotos/main-img.png" alt="">
+            </div>
+
+            <div class="text-container hidden-l">
+                <h1 class="main-title">Amanda Ribeiro Arquiteta</h1>
+
+                <p class="main-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error sit beatae ut repellendus natus autem ratione enim explicabo neque molestiae reiciendis, esse nobis quam aspernatur nulla animi veritatis hic dolor.</p>
+
+                <p class="btn">Faça o orçamento <i class="fas fa-arrow-right"></i></p>
+            </div>
+        </section>
+
+        <section class="sobre-mim" id="sobre-mim">
+            <div class="text-container hidden-r">
+                <h1 class="main-title">Sobre mim</h1>
+
+                <p class="main-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus ab repellat necessitatibus, laboriosam possimus quia cumque delectus dolor est ut tenetur saepe qui non, earum suscipit voluptate vero dolore rerum. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus nesciunt voluptatibus amet qui porro reiciendis est natus doloribus minus sequi accusantium delectus, incidunt cupiditate ea odit sint modi adipisci voluptates.</p>
+            </div>
+
+            <div class="img-container hidden-l">
+                <img src="images/Fotos/IMG_8162.JPG" alt="" class="main-img">
+            </div>
+
+            <img src="images/Outras/Folha.png" alt="" class="folha hidden-s">
+        </section>
+
+        <section class="projetos" id="projetos">
+            <h1 class="main-title hidden-s">Projetos</h1>
+
+            <div class="grid">
+                <div class="card hidden-r">
+                    <img src="images/Projetos/card1.png" alt="">
+                </div>
+
+                <div class="card hidden-r">
+                    <img src="images/Projetos/card2.png" alt="">
+                </div>
+
+                <div class="card hidden-r">
+                    <img src="images/Projetos/card3.png" alt="">
+                </div>
+
+                <div class="card hidden-r">
+                    <img src="images/Projetos/card4.jpeg" alt="">
+                </div>
+
+                <div class="card hidden-l">
+                    <img src="images/Projetos/card5.png" alt="">
+                </div>
+
+                <div class="card hidden-l">
+                    <img src="images/Projetos/card6.png" alt="">
+                </div>
+
+                <div class="card hidden-l">
+                    <img src="images/Projetos/card7.jpeg" alt="">
+                </div>
+
+                <div class="card hidden-l">
+                    <img src="images/Projetos/card8.png" alt="">
+                </div>
+            </div>
+        </section>
+
+        <section class="servicos" id="servicos">
+            <h1 class="main-title hidden-s">Serviços</h1>
+
+            <div class="main-container">
+                <div class="container hidden-r">
+                    <div class="box-title">
+                        <h1 class="container-title">Consultoria Vibe</h1>
+                    </div>
+                    <div class="box-text">
+                        <p class="container-text">Trabalhamos com soluções práticas e rápidas, perfeita para melhoras pontuais, sem quebra quebra. Possui acompanhamento de estudo com imagens, referências e croquis esquemáticos (Desenhos feitos a mão).</p>
+                    </div>
+                </div>
+                <div class="container invertido hidden-r">
+                    <div class="box-title">
+                        <h1 class="container-title">Consultoria Alma</h1>
+                    </div>
+                    <div class="box-text">
+                        <p class="container-text">Soluções um pouco mais profunda. Nesta consultoria é entregue uma planta baixa técnica e a maquete 3D sem renderização de imagem realista, juntamente com uma lista com links direto para compras de adornos, mobiliários soltos e decorações"</p>
+                    </div>
+                </div>
+                <div class="container hidden-r">
+                    <div class="box-title">
+                        <h1 class="container-title">Acompanhamento personalizado</h1>
+                    </div>
+                    <div class="box-text">
+                        <p class="container-text">Nesse serviço você não precisará decidir sozinho(a)! Oferecemos acompanhamento completo, para te ajudar a escolher o melhor imóvel ou terreno, alinhado ao seu perfil, necessidades e objetivos.</p>
+                    </div>
+                </div>
+                <div class="container invertido hidden-l">
+                    <div class="box-title">
+                        <h1 class="container-title">Projeto Urbanístico</h1>
+                    </div>
+                    <div class="box-text">
+                        <p class="container-text">Planejamento completo para loteamentos, condomínios ou áreas de convivência e paisagísticas — funcionalidade e beleza lado a lado.</p>
+                    </div>
+                </div>
+                <div class="container hidden-l">
+                    <div class="box-title">
+                        <h1 class="container-title">Projeto de arquitetura</h1>
+                    </div>
+                    <div class="box-text">
+                        <p class="container-text">Ideal para quem deseja construir do zero, da concepção à aprovação, cuidamos de cada detalhe técnico e criativo da sua obra.</p>
+                    </div>
+                </div>
+                <div class="container invertido hidden-l">
+                    <div class="box-title">
+                        <h1 class="container-title">Projeto de Interiores</h1>
+                    </div>
+                    <div class="box-text">
+                        <p class="container-text">Ideal para adequação de um espaço já existente. Ambientes internos pensados para conforto, estética e necessidades.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="orcamento" id="orcamento">
+            <h1 class="main-title hidden-l">Faça seu orçamento!</i></h1>
+
+            <p class="btn hidden-r">Faça já seu orçamento <i class="fas fa-arrow-right"></i></p>
+        </section>
+
+        <section class="contato" id="contato">
+            <h1 class="main-title hidden-r">Contato</h1>
+
+            <div class="grid">
+                <a href=""><i class="fab fa-whatsapp hidden-r"></i></a>
+                <a href=""><i class="fab fa-instagram hidden-r"></i></a>
+                <a href=""><i class="fab fa-pinterest hidden-r"></i></a>
+                <a href=""><i class="fas fa-envelope hidden-r"></i></a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-main">
+            <div class="footer-column">
+                <div class="footer-logo">
+                    <img src="images/Logo/Logo.png" alt="Amanda Ribeiro Arquiteta">
+                </div>
+            </div>
+            
+            <div class="footer-column">
+                <h3>Navegação</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#sobre-mim">Sobre mim</a></li>
+                    <li><a href="#projetos">Projetos</a></li>
+                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#orcamento">Orçamento</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-column">
+                <h3>Serviços</h3>
+                <ul>
+                    <li>Consultoria Vibe</li>
+                    <li>Consultoria Alma</li>
+                    <li>Acompanhamento Personalizado</li>
+                    <li>Projeto Urbanístico</li>
+                    <li>Projeto de Arquitetura</li>
+                    <li>Projeto de Interiores</li>
+                </ul>
+            </div>
+            
+            <div class="footer-column">
+                <h3>Contato</h3>
+                <p><i class="fas fa-map-marker-alt"></i> São Paulo, SP</p>
+                <p><i class="fas fa-phone"></i> (11) 9xxxx-xxxx</p>
+                <p><i class="fas fa-envelope"></i> contato@amandaribeiro.arq.br</p>
+                <div class="social-icons">
+                    <a href=""><i class="fab fa-whatsapp"></i></a>
+                    <a href=""><i class="fab fa-instagram"></i></a>
+                    <a href=""><i class="fab fa-pinterest"></i></a>
+                    <a href=""><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2025 Amanda Ribeiro Arquiteta. Todos os direitos reservados.</p>
+            <p>&copy; Desenvolvido por <a href="">Planno</a></p>
+        </div>
+    </footer>
+
+    <!-- Modal de Imagem -->
+    <div id="imageModal" class="image-modal">
+        <span class="close-modal"><i class="fas fa-times"></i></span>
+        <div class="modal-content">
+            <img id="modalImage" src="" alt="Imagem ampliada">
+        </div>
+        <div class="modal-navigation">
+            <button id="prevImage" class="nav-btn"><i class="fas fa-chevron-left"></i></button>
+            <button id="nextImage" class="nav-btn"><i class="fas fa-chevron-right"></i></button>
+        </div>
+    </div>
+
+    <script src="src/mobile-menu.js"></script>
+    <script src="src/RightAnimation.js"></script>
+    <script src="src/LeftAnimation.js"></script>
+    <script src="src/ScaleAnimation.js"></script>
+    <script src="src/imageModal.js"></script>
+</body>
+</html>
