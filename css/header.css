@@ -107,7 +107,7 @@ header {
     }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1300px) {
     header {
         justify-content: space-between;
         padding: 0 30px;
@@ -119,6 +119,11 @@ header {
 
     .menu-icon {
         display: block !important;
+        font-size: 40px;
+    }
+
+    .mobile-menu li {
+        gap: 60px;
     }
 }
 
