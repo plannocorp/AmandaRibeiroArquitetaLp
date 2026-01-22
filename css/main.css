@@ -88,8 +88,8 @@ main {
     width: 100%;
 }
 
-/* Media Query para telas até 1200px */
-@media screen and (max-width: 1300px) {
+/* Media Query para telas até 1600px */
+@media screen and (max-width: 1600px) {
     .home {
         padding: 40px 20px;
     }
@@ -240,8 +240,8 @@ main {
     object-position: center;
 }
 
-/* Media Query para telas até 1200px */
-@media screen and (max-width: 1200px) {
+/* Media Query para telas até 1600px */
+@media screen and (max-width: 1600px) {
     .sobre-mim {
         padding: 40px 20px;
     }
@@ -431,7 +431,7 @@ main {
 }
 
 /* Media Query para telas grandes (acima de 1400px) - 4 colunas */
-@media screen and (min-width: 1401px) {
+@media screen and (min-width: 1601px) {
     .projetos .main-title {
         margin-top: 60px;
     }
