@@ -211,7 +211,7 @@ header {
 }
 
 /* Media Query para mobile (até 650px) */
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 800px) {
     .mobile-menu li {
         gap: 50px;
     }
