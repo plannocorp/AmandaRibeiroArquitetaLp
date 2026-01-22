@@ -107,7 +107,90 @@ header {
     }
 }
 
-@media screen and (max-width: 1650px) {
+/* Media Query para MacBook Pro 16" (viewport ~1728px) - Menu Responsivo */
+@media screen and (min-width: 1601px) and (max-width: 1920px) 
+       and (-webkit-min-device-pixel-ratio: 2),
+       screen and (min-width: 1601px) and (max-width: 1920px) 
+       and (min-resolution: 192dpi) {
+    header {
+        padding: 0 40px;
+    }
+    
+    .nav-bar {
+        display: none;
+    }
+
+    .menu-icon {
+        display: block !important;
+        font-size: 45px;
+    }
+
+    .mobile-menu li {
+        gap: 70px;
+    }
+    
+    .mobile-menu li a {
+        font-size: 24px;
+    }
+}
+
+/* Media Query para MacBook Pro 14" (viewport ~1512px) - Menu Responsivo */
+@media screen and (min-width: 1400px) and (max-width: 1600px) 
+       and (-webkit-min-device-pixel-ratio: 2),
+       screen and (min-width: 1400px) and (max-width: 1600px) 
+       and (min-resolution: 192dpi) {
+    header {
+        padding: 0 35px;
+    }
+    
+    .nav-bar {
+        display: none;
+    }
+
+    .menu-icon {
+        display: block !important;
+        font-size: 42px;
+    }
+
+    .mobile-menu li {
+        gap: 65px;
+    }
+    
+    .mobile-menu li a {
+        font-size: 22px;
+    }
+}
+
+/* Media Query para MacBook Pro 13" (viewport ~1280px) - Menu Responsivo */
+@media screen and (min-width: 1200px) and (max-width: 1399px) 
+       and (-webkit-min-device-pixel-ratio: 2),
+       screen and (min-width: 1200px) and (max-width: 1399px) 
+       and (min-resolution: 192dpi) {
+    header {
+        padding: 0 30px;
+    }
+    
+    .nav-bar {
+        display: none;
+    }
+
+    .menu-icon {
+        display: block !important;
+        font-size: 40px;
+    }
+
+    .mobile-menu li {
+        gap: 60px;
+    }
+    
+    .mobile-menu li a {
+        font-size: 20px;
+    }
+}
+
+/* Media Query para telas até 1650px (sem Retina) */
+@media screen and (max-width: 1650px) and (-webkit-max-device-pixel-ratio: 1.5),
+       screen and (max-width: 1650px) and (max-resolution: 144dpi) {
     header {
         justify-content: space-between;
         padding: 0 30px;
@@ -127,6 +210,7 @@ header {
     }
 }
 
+/* Media Query para mobile (até 650px) */
 @media screen and (max-width: 650px) {
     .mobile-menu li {
         gap: 50px;
