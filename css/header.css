@@ -107,6 +107,32 @@ header {
     }
 }
 
+/* Media Query para dispositivos móveis - Garantindo que funcione em todos os celulares */
+@media screen and (max-width: 1024px), 
+       screen and (max-device-width: 1024px),
+       screen and (hover: none) and (pointer: coarse) {
+    header {
+        padding: 0 30px;
+    }
+    
+    .nav-bar {
+        display: none !important;
+    }
+
+    .menu-icon {
+        display: block !important;
+        font-size: 40px;
+    }
+
+    .mobile-menu li {
+        gap: 60px;
+    }
+    
+    .mobile-menu li a {
+        font-size: 20px;
+    }
+}
+
 /* Media Query para MacBook Pro 16" (viewport ~1728px) - Menu Responsivo */
 @media screen and (min-width: 1601px) and (max-width: 1920px) 
        and (-webkit-min-device-pixel-ratio: 2),
@@ -210,7 +236,7 @@ header {
     }
 }
 
-/* Media Query para mobile (até 650px) */
+/* Media Query para mobile (até 800px) */
 @media screen and (max-width: 800px) {
     .mobile-menu li {
         gap: 50px;
