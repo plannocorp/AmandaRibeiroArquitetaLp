@@ -15,46 +15,9 @@ header {
     cursor: pointer;
 }
 
-.nav-bar li {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap: 150px;
-}
-
-.nav-bar li a {
-    position: relative;
-    font-size: 18px;
-    letter-spacing: 2px;
-    color: var(--corbase);
-    font-weight: 500;
-    transition: all 0.6s ease;
-}
-
-.nav-bar li a:hover {
-    transform: translate(0, -8px);
-}
-
-.nav-bar li a::after {
-    content: '';
-    position: absolute;
-    width: 0%;
-    height: 2px;
-    background-color: var(--corbase);
-    left: 50%;
-    transform: translateX(-50%);
-    top: 110%;
-    transition: all 0.6s ease;
-}
-
-.nav-bar li a:hover::after {
-    width: 70%;
-}
-
 .menu-icon {
-    display: none !important;
-    font-size: 75px;
+    display: block;
+    font-size: 50px;
     color: var(--corbase);
     cursor: pointer;
     padding: 0 35px;
@@ -210,7 +173,7 @@ header {
     }
     
     .mobile-menu li a {
-        font-size: 20px;
+        font-size: 18px;
     }
 }
 

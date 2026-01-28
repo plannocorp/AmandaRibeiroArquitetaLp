@@ -145,6 +145,20 @@ footer {
         margin-bottom: 30px;
         text-align: center;
     }
+
+    .footer-bottom {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        gap: 10px;
+    }
+
+    .footer-bottom p {
+        font-size: 14px;
+        width: 86%;
+    }
     
     .footer-column h3:after {
         left: 50%;
