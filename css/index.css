@@ -39,52 +39,53 @@ html, body, main {
 
 
 
-/* Animations */
-
-/* Right Animations */
-
-.hidden-r {
+/* Animação vindo da Esquerda (Left) */
+.hidden-l {
     opacity: 0;
-    transform: translateX(-100%);
-    filter: blur(5px);
-    transition: all 1.5s ease;
+    transform: translateX(50px);
+    filter: blur(4px);
+    transition: opacity 0.9s cubic-bezier(0.165, 0.84, 0.44, 1), 
+                transform 0.9s cubic-bezier(0.165, 0.84, 0.44, 1), 
+                filter 0.9s ease;
+    will-change: opacity, transform, filter;
 }
 
-.show-r {
+.hidden-l.show-l {
     opacity: 1;
     transform: translateX(0);
     filter: blur(0);
-    transition: all 1.5s ease;
 }
 
-/* Left Animations */
-
-.hidden-l {
+/* Animação vindo da Direita (Right) */
+.hidden-r {
     opacity: 0;
-    transform: translateX(100%);
-    filter: blur(5px);
-    transition: all 1.5s ease;
+    transform: translateX(-50px);
+    filter: blur(4px);
+    transition: opacity 0.9s cubic-bezier(0.165, 0.84, 0.44, 1), 
+                transform 0.9s cubic-bezier(0.165, 0.84, 0.44, 1), 
+                filter 0.9s ease;
+    will-change: opacity, transform, filter;
 }
 
-.show-l {
+.hidden-r.show-r {
     opacity: 1;
-    transform: translateX(0%);
+    transform: translateX(0);
     filter: blur(0);
-    transition: all 1.5s ease;
 }
 
-/* Scale Animations */
-
+/* Animação de Escala / Zoom (Scale) */
 .hidden-s {
     opacity: 0;
-    transform: scale(0.3);
-    filter: blur(5px);
-    transition: all 1.5s ease;
+    transform: scale(0.92);
+    filter: blur(4px);
+    transition: opacity 0.9s cubic-bezier(0.165, 0.84, 0.44, 1), 
+                transform 0.9s cubic-bezier(0.165, 0.84, 0.44, 1), 
+                filter 0.9s ease;
+    will-change: opacity, transform, filter;
 }
 
-.show-s {
+.hidden-s.show-s {
     opacity: 1;
     transform: scale(1);
     filter: blur(0);
-    transition: all 1.5s ease;
 }

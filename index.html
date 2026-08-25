@@ -28,8 +28,7 @@
                 <a onclick="toggleMenu()" href="#projetos">Projetos</a>
                 <a onclick="toggleMenu()" href="#servicos">Serviços</a>
                 <a onclick="toggleMenu()" href="#avaliacoes">Avaliações</a>
-                <a onclick="toggleMenu()" href="#orcamento">Orçamento</a>
-                <a onclick="toggleMenu()" href="#contato">Contato</a>
+                <a onclick="toggleMenu()" href="#contato">Orçamento & Contato</a>
             </li>
         </div>
     </header>
@@ -46,59 +45,91 @@
                 <p class="main-text">Projetos autorais que unem design, estratégia e bem-estar para transformar espaços em investimentos inteligentes. Arquitetura pensada para pessoas reais e espaços com propósito. Criamos projetos autorais, funcionais e personalizados, valorizando cada detalhe para entregar ambientes que fazem sentido para você.</p>
 
                 <a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLScikTKM5TErJlyoYpEagkYB4MPW7wnTEfim16BW3ONv-2f9jw/viewform?usp=dialog">
-                    <p class="btn">Faça o orçamento <i class="fas fa-arrow-right"></i></p>
+                    <p class="btn">Entre em contato <i class="fas fa-arrow-right"></i></p>
                 </a>
             </div>
         </section>
 
         <section class="sobre-mim" id="sobre-mim">
-            <div class="text-container hidden-r">
+            <div class="text-container">
+                <span class="sobre-tag">ARQUITETURA & NEUROARQUITETURA</span>
                 <h1 class="main-title">Sobre mim</h1>
 
-                <p class="main-text">Sou arquiteta e urbanista desde 2021, com especialização em Neuroarquitetura. Entre Goiânia e São Paulo — duas cidades com ritmos e identidades opostas — encontrei o equilíbrio que guia meu olhar profissional. Acredito que os espaços têm o poder de influenciar emoções e comportamentos. Por isso, meu trabalho não se baseia em uma arquitetura elitista ou apenas estética, mas em uma arquitetura humana: aquela que acolhe, acalma e cria conexões reais entre pessoas e ambientes.</p>
+                <p class="main-text">Sou arquiteta e urbanista desde 2021, com especialização em <strong>Neuroarquitetura</strong>. Entre Goiânia e São Paulo — duas cidades com ritmos e identidades opostas — encontrei o equilíbrio que guia meu olhar profissional.</p>
+                
+                <div class="sobre-highlight">
+                    <p>"Acredito que os espaços têm o poder de influenciar emoções e comportamentos. Por isso, meu trabalho é focado em uma <span>arquitetura humana</span>: aquela que acolhe, acalma e cria conexões reais entre pessoas e ambientes."</p>
+                </div>
+
+                <div class="sobre-badges">
+                    <div class="badge-item">
+                        <span class="badge-number">2021</span>
+                        <span class="badge-label">Atuação profissional</span>
+                    </div>
+                    <div class="badge-divider"></div>
+                    <div class="badge-item">
+                        <span class="badge-number">GO / SP</span>
+                        <span class="badge-label">Goiânia e São Paulo</span>
+                    </div>
+                    <div class="badge-divider"></div>
+                    <div class="badge-item">
+                        <span class="badge-number">Neuroarquitetura</span>
+                        <span class="badge-label">Especialização</span>
+                    </div>
+                </div>
             </div>
 
-            <div class="img-container hidden-l">
-                <img src="images/Fotos/IMG_8162.JPG" alt="" class="main-img">
+            <div class="img-container">
+                <div class="img-wrapper">
+                    <img src="images/Fotos/IMG_8162.JPG" alt="Amanda Ribeiro Arquiteta" class="main-img">
+                </div>
+                <div class="img-badge">
+                    <i class="fas fa-award"></i>
+                    <span>Amanda Ribeiro</span>
+                </div>
             </div>
 
-            <img src="images/Outras/Folha.png" alt="" class="folha hidden-s">
+            <img src="images/Outras/Folha.png" alt="" class="folha">
         </section>
 
         <section class="projetos" id="projetos">
-            <h1 class="main-title hidden-s">Projetos</h1>
+            <h1 class="main-title">Projetos</h1>
 
-            <div class="grid">
-                <div class="card hidden-r">
-                    <img src="images/Projetos/card1.png" alt="">
+            <div class="projetos-container">
+                <!-- Imagem Principal em Destaque (Esquerda) -->
+                <div class="projetos-featured">
+                    <img id="project-featured-img" src="images/Projetos/card1.png" alt="Projeto em Destaque">
+                    <div class="featured-overlay">
+                        <span id="project-featured-counter">01 / 08</span>
+                    </div>
                 </div>
 
-                <div class="card hidden-r">
-                    <img src="images/Projetos/card2.png" alt="">
-                </div>
-
-                <div class="card hidden-r">
-                    <img src="images/Projetos/card3.png" alt="">
-                </div>
-
-                <div class="card hidden-r">
-                    <img src="images/Projetos/card4.jpeg" alt="">
-                </div>
-
-                <div class="card hidden-l">
-                    <img src="images/Projetos/card5.png" alt="">
-                </div>
-
-                <div class="card hidden-l">
-                    <img src="images/Projetos/card6.png" alt="">
-                </div>
-
-                <div class="card hidden-l">
-                    <img src="images/Projetos/card7.jpeg" alt="">
-                </div>
-
-                <div class="card hidden-l">
-                    <img src="images/Projetos/card8.png" alt="">
+                <!-- Grid de 8 Miniaturas (Direita) -->
+                <div class="projetos-grid">
+                    <div class="card active" onclick="setFeaturedProject(0)">
+                        <img src="images/Projetos/card1.png" alt="Projeto 1">
+                    </div>
+                    <div class="card" onclick="setFeaturedProject(1)">
+                        <img src="images/Projetos/card2.png" alt="Projeto 2">
+                    </div>
+                    <div class="card" onclick="setFeaturedProject(2)">
+                        <img src="images/Projetos/card3.png" alt="Projeto 3">
+                    </div>
+                    <div class="card" onclick="setFeaturedProject(3)">
+                        <img src="images/Projetos/card4.jpeg" alt="Projeto 4">
+                    </div>
+                    <div class="card" onclick="setFeaturedProject(4)">
+                        <img src="images/Projetos/card5.png" alt="Projeto 5">
+                    </div>
+                    <div class="card" onclick="setFeaturedProject(5)">
+                        <img src="images/Projetos/card6.png" alt="Projeto 6">
+                    </div>
+                    <div class="card" onclick="setFeaturedProject(6)">
+                        <img src="images/Projetos/card7.jpeg" alt="Projeto 7">
+                    </div>
+                    <div class="card" onclick="setFeaturedProject(7)">
+                        <img src="images/Projetos/card8.png" alt="Projeto 8">
+                    </div>
                 </div>
             </div>
         </section>
@@ -106,67 +137,54 @@
         <section class="servicos" id="servicos">
             <h1 class="main-title hidden-s">Serviços</h1>
 
-            <div class="main-container">
-                <div class="container hidden-r">
-                    <div class="box-title">
-                        <h1 class="container-title">Consultoria Vibe</h1>
-                    </div>
-                    <div class="box-text">
-                        <p class="container-text">Trabalhamos com soluções práticas e rápidas, perfeita para melhoras pontuais, sem quebra quebra. Possui acompanhamento de estudo com imagens, referências e croquis esquemáticos (Desenhos feitos a mão).</p>
-                    </div>
+            <div class="editorial-card hidden-s">
+                <div class="editorial-header">
+                    <span class="editorial-badge">NOSSO PORTFÓLIO DE ATUAÇÃO</span>
                 </div>
-                <div class="container invertido hidden-r">
-                    <div class="box-title">
-                        <h1 class="container-title">Consultoria Alma</h1>
-                    </div>
-                    <div class="box-text">
-                        <p class="container-text">Soluções um pouco mais profunda. Nesta consultoria é entregue uma planta baixa técnica e a maquete 3D sem renderização de imagem realista, juntamente com uma lista com links direto para compras de adornos, mobiliários soltos e decorações"</p>
-                    </div>
-                </div>
-                <div class="container hidden-r">
-                    <div class="box-title">
-                        <h1 class="container-title">Acompanhamento personalizado</h1>
-                    </div>
-                    <div class="box-text">
-                        <p class="container-text">Nesse serviço você não precisará decidir sozinho(a)! Oferecemos acompanhamento completo, para te ajudar a escolher o melhor imóvel ou terreno, alinhado ao seu perfil, necessidades e objetivos.</p>
-                    </div>
-                </div>
-                <div class="container invertido hidden-l">
-                    <div class="box-title">
-                        <h1 class="container-title">Projeto Urbanístico</h1>
-                    </div>
-                    <div class="box-text">
-                        <p class="container-text">Planejamento completo para loteamentos, condomínios ou áreas de convivência e paisagísticas — funcionalidade e beleza lado a lado.</p>
-                    </div>
-                </div>
-                <div class="container hidden-l">
-                    <div class="box-title">
-                        <h1 class="container-title">Projeto de arquitetura</h1>
-                    </div>
-                    <div class="box-text">
-                        <p class="container-text">Ideal para quem deseja construir do zero, da concepção à aprovação, cuidamos de cada detalhe técnico e criativo da sua obra.</p>
-                    </div>
-                </div>
-                <div class="container invertido hidden-l">
-                    <div class="box-title">
-                        <h1 class="container-title">Projeto de Interiores</h1>
-                    </div>
-                    <div class="box-text">
-                        <p class="container-text">Ideal para adequação de um espaço já existente. Ambientes internos pensados para conforto, estética e necessidades.</p>
-                    </div>
+
+                <div class="editorial-columns">
+                    <article class="servico-block">
+                        <h2 class="servico-titulo">Consultoria Vibe</h2>
+                        <p class="servico-descricao">Trabalhamos com soluções práticas e rápidas, perfeita para melhoras pontuais, sem quebra quebra. Possui acompanhamento de estudo com imagens, referências e croquis esquemáticos (Desenhos feitos a mão).</p>
+                    </article>
+
+                    <article class="servico-block">
+                        <h2 class="servico-titulo">Consultoria Alma</h2>
+                        <p class="servico-descricao">Soluções um pouco mais profunda. Nesta consultoria é entregue uma planta baixa técnica e a maquete 3D sem renderização de imagem realista, juntamente com uma lista com links direto para compras de adornos, mobiliários soltos e decorações.</p>
+                    </article>
+
+                    <article class="servico-block">
+                        <h2 class="servico-titulo">Acompanhamento personalizado</h2>
+                        <p class="servico-descricao">Nesse serviço você não precisará decidir sozinho(a)! Oferecemos acompanhamento completo, para te ajudar a escolher o melhor imóvel ou terreno, alinhado ao seu perfil, necessidades e objetivos.</p>
+                    </article>
+
+                    <article class="servico-block">
+                        <h2 class="servico-titulo">Projeto Urbanístico</h2>
+                        <p class="servico-descricao">Planejamento completo para loteamentos, condomínios ou áreas de convivência e paisagísticas — funcionalidade e beleza lado a lado.</p>
+                    </article>
+
+                    <article class="servico-block">
+                        <h2 class="servico-titulo">Projeto de arquitetura</h2>
+                        <p class="servico-descricao">Ideal para quem deseja construir do zero, da concepção à aprovação, cuidamos de cada detalhe técnico e criativo da sua obra.</p>
+                    </article>
+
+                    <article class="servico-block">
+                        <h2 class="servico-titulo">Projeto de Interiores</h2>
+                        <p class="servico-descricao">Ideal para adequação de um espaço já existente. Ambientes internos pensados para conforto, estética e necessidades.</p>
+                    </article>
                 </div>
             </div>
         </section>
 
         <section id="avaliacoes" class="avaliacoes">
-            <h1 class="main-title hidden-s">Avaliações</h1>
+            <div class="avaliacoes-header hidden-s">
+                <span class="avaliacoes-subtitle">DEPOIMENTOS DE CLIENTES</span>
+                <h1 class="main-title">Avaliações</h1>
+            </div>
 
             <div class="container">
                 <div class="card hidden-s">
-                    <h1 class="card-title">Letícia</h1>
-
-                    <p class="card-text">Gente do céu, tá bonito demais esse sabiá. Tô em delírios!! 😍</p>
-
+                    <div class="card-quote"><i class="fas fa-quote-right"></i></div>
                     <div class="card-stars">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -174,13 +192,18 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
+                    <p class="card-text">"Gente do céu, tá bonito demais esse sabiá. Tô em delírios!! 😍"</p>
+                    <div class="card-author">
+                        <div class="author-avatar">L</div>
+                        <div class="author-info">
+                            <h3 class="card-title">Letícia</h3>
+                            <span class="author-tag">Cliente Residencial</span>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="card hidden-s">
-                    <h1 class="card-title">Fiama</h1>
-
-                    <p class="card-text">Obrigada Amanda, a mensagem muito linda e o projeto ficou perfeito!</p>
-
+                    <div class="card-quote"><i class="fas fa-quote-right"></i></div>
                     <div class="card-stars">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -188,43 +211,66 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
+                    <p class="card-text">"Obrigada Amanda, a mensagem muito linda e o projeto ficou perfeito!"</p>
+                    <div class="card-author">
+                        <div class="author-avatar">F</div>
+                        <div class="author-info">
+                            <h3 class="card-title">Fiama</h3>
+                            <span class="author-tag">Projeto de Interiores</span>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="card hidden-s">
-                    <h1 class="card-title">Maria Clara</h1>
-
-                    <p class="card-text">Nossa, acabamos de ver a entrega final, e eu amei, ficou tudo perfeito, incrível seu trabalho, muito muito obrigada mesmo.</p>
-
+                    <div class="card-quote"><i class="fas fa-quote-right"></i></div>
                     <div class="card-stars">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
+                    </div>
+                    <p class="card-text">"Nossa, acabamos de ver a entrega final, e eu amei, ficou tudo perfeito, incrível seu trabalho, muito muito obrigada mesmo."</p>
+                    <div class="card-author">
+                        <div class="author-avatar">M</div>
+                        <div class="author-info">
+                            <h3 class="card-title">Maria Clara</h3>
+                            <span class="author-tag">Consultoria Vibe</span>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="orcamento" id="orcamento">
-            <h1 class="main-title hidden-l">Faça seu orçamento!</i></h1>
-
-            <a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLScikTKM5TErJlyoYpEagkYB4MPW7wnTEfim16BW3ONv-2f9jw/viewform?usp=dialog">
-                <p class="btn hidden-r">Faça já seu orçamento <i class="fas fa-arrow-right"></i></p>
-            </a>
-        </section>
-
         <section class="contato" id="contato">
-            <h1 class="main-title hidden-r">Contato</h1>
+            <div id="orcamento"></div>
 
-            <div class="grid">
-                <a target="_blank" href="https://wa.me/5562995680941?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20gostaria%20de%20fazer%20um%20or%C3%A7amento!"><i class="fab fa-whatsapp hidden-r"></i></a>
+            <div class="contato-card hidden-s">
+                <span class="contato-tag">VAMOS DISCUTIR O SEU PROJETO?</span>
+                <h1 class="main-title">Entre em contato & Faça seu Orçamento</h1>
+                <p class="contato-desc">Transforme seus espaços em ambientes autorais e funcionais. Solicite um orçamento personalizado ou fale diretamente conosco.</p>
 
-                <a target="_blank" href="https://www.instagram.com/arq.amandarib/"><i class="fab fa-instagram hidden-r"></i></a>
+                <a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLScikTKM5TErJlyoYpEagkYB4MPW7wnTEfim16BW3ONv-2f9jw/viewform?usp=dialog" class="btn-primary">
+                    <span>Preencher formulário de orçamento</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
 
-                <a target="_blank" href="https://br.pinterest.com/amandaribarq/?invite_code=d2f752a2d88e49f1bcafd1f2eb088650&sender=966796382415394951"><i class="fab fa-pinterest hidden-r"></i></a>
+                <div class="divider"></div>
 
-                <a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLScikTKM5TErJlyoYpEagkYB4MPW7wnTEfim16BW3ONv-2f9jw/viewform?usp=dialog"><i class="fas fa-envelope hidden-r"></i></a>
+                <div class="social-grid">
+                    <a target="_blank" href="https://wa.me/5562995680941?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20gostaria%20de%20fazer%20um%20or%C3%A7amento!" class="social-icon" title="WhatsApp">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                    <a target="_blank" href="https://www.instagram.com/arq.amandarib/" class="social-icon" title="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a target="_blank" href="https://br.pinterest.com/amandaribarq/?invite_code=d2f752a2d88e49f1bcafd1f2eb088650&sender=966796382415394951" class="social-icon" title="Pinterest">
+                        <i class="fab fa-pinterest"></i>
+                    </a>
+                    <a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLScikTKM5TErJlyoYpEagkYB4MPW7wnTEfim16BW3ONv-2f9jw/viewform?usp=dialog" class="social-icon" title="E-mail">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
             </div>
         </section>
     </main>
@@ -245,8 +291,7 @@
                     <li><a href="#projetos">Projetos</a></li>
                     <li><a href="#servicos">Serviços</a></li>
                     <li><a href="#avaliacoes">Avaliações</a></li>
-                    <li><a href="#orcamento">Orçamento</a></li>
-                    <li><a href="#contato">Contato</a></li>
+                    <li><a href="#contato">Orçamento & Contato</a></li>
                 </ul>
             </div>
             
@@ -281,7 +326,7 @@
         
         <div class="footer-bottom">
             <p>&copy; 2025 Amanda Ribeiro Arquiteta. Todos os direitos reservados.</p>
-            <p>&copy; Desenvolvido por <a target="_blank" href="http://planno.online/">Planno</a> | <a target="_blank" href="http://planno.online/termos-de-uso">Termos de Uso</a> | <a target="_blank" href="http://planno.online/politicas-de-privacidade">Políticas de Privacidade</a></p>
+            <p>&copy; Desenvolvido por <a target="_blank" href="https://www.planno.online/">Planno</a> | <a target="_blank" href="https://www.planno.online/termos-de-uso">Termos de Uso</a> | <a target="_blank" href="https://www.planno.online/politicas-de-privacidade">Políticas de Privacidade</a></p>
         </div>
     </footer>
 
@@ -302,5 +347,6 @@
     <script src="src/LeftAnimation.js"></script>
     <script src="src/ScaleAnimation.js"></script>
     <script src="src/imageModal.js"></script>
+    <script src="src/projectSlider.js"></script>
 </body>
 </html>

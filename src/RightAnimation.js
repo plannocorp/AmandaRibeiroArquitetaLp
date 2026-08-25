@@ -1,19 +1,13 @@
-const rightObserver = new IntersectionObserver((entries) => {
+const rightObserver = new IntersectionObserver((entries, observer) => {
     entries.forEach((entry) => {
         if (entry.isIntersecting) {
             entry.target.classList.add('show-r');
-
-            entry.target.classList.remove('hidden-r');
-        }
-
-        else {
-            entry.target.classList.add('hidden-r');
-
-            entry.target.classList.remove('show-r');
+            observer.unobserve(entry.target);
         }
     });
+}, {
+    threshold: 0.15
 });
 
 const rightElements = document.querySelectorAll('.hidden-r');
-
 rightElements.forEach((el) => rightObserver.observe(el));
