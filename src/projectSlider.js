@@ -3,7 +3,7 @@ const projectImages = [
     "images/Projetos/card2.png",
     "images/Projetos/card3.png",
     "images/Projetos/card4.jpeg",
-    "images/Projetos/card5.png",
+    "images/Projetos/card5.jpeg",
     "images/Projetos/card6.png",
     "images/Projetos/card7.jpeg",
     "images/Projetos/card8.png"
