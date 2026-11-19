@@ -1,12 +1,12 @@
 const projectImages = [
-    "images/Projetos/card1.png",
-    "images/Projetos/card2.png",
-    "images/Projetos/card3.png",
-    "images/Projetos/card4.jpeg",
-    "images/Projetos/card5.jpeg",
-    "images/Projetos/card6.png",
-    "images/Projetos/card7.jpeg",
-    "images/Projetos/card8.png"
+    "images/Projetos/card1.webp",
+    "images/Projetos/card2.webp",
+    "images/Projetos/card3.webp",
+    "images/Projetos/card4.webp",
+    "images/Projetos/card5.webp",
+    "images/Projetos/card6.webp",
+    "images/Projetos/card7.webp",
+    "images/Projetos/card8.webp"
 ];
 
 let currentProjectIndex = 0;

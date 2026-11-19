@@ -1,0 +1,15 @@
+# Arquivos que NÃO vão para o site publicado (continuam no repositório).
+.git
+.github
+.gitignore
+.assetsignore
+wrangler.jsonc
+LICENSE
+CNAME
+node_modules
+# Originais pesados: o site usa as versões .webp otimizadas
+images/Fotos/*.JPG
+images/Fotos/main-img.png
+images/Projetos/*.png
+images/Projetos/*.jpeg
+images/Outras/Folha.png
